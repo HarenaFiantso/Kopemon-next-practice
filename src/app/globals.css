@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(120deg, #f5d269 0%, #da8065 100%);
+  background: black;
+  scrollbar-width: none;
 }
