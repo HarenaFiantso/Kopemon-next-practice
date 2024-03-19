@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
   return (
       <div className="w-[100vw] text-center h-[100vh] flex flex-col items-center justify-center gap-10">
         <div className='flex gap-5'>
@@ -10,3 +10,5 @@ export default function Home() {
       </div>
   );
 }
+
+export default Home;

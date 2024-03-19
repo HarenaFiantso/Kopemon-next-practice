@@ -50,14 +50,16 @@ export const metadata: Metadata = {
   description: "Next TypeScript practice using PokeAPI",
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
       <html lang='en' className={`${poppins.variable} font-sans`}>
       <body>{children}</body>
       </html>
   );
 }
+
+export default RootLayout;
