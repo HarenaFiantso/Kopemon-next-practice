@@ -46,7 +46,7 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "WEB-3 Pokemon",
+  title: "Pokepage - Fiantso Harena",
   description: "Next TypeScript practice using PokeAPI",
 };
 
