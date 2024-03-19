@@ -5,3 +5,9 @@ export async function getPokemonList() {
     const data: JSON = await response.json();
     return data;
 }
+
+export async function getPokemon(name: string) {
+    const response: Response = await fetch(POKEMON_API + 'pokemon/' + name);
+    const data: JSON = await response.json();
+    return data;
+}
