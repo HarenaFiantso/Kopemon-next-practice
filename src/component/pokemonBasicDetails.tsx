@@ -25,16 +25,17 @@ export default function PokemonBasicDetails({ id, name, weight, height, types }:
                             <div className="divTableCell w-20 text-gray-600 text-right mr-6">Type</div>
                             <div className=" divTableCell w-2/3">
                                 <div className='flex flex-wrap'>
-                                    {pokemonTypes.map(type =>
+                                    {pokemonTypes.map(type => (
                                         <div
                                             className={`flex items-center capitalize mb-2 mr-2 ${type} justify-center text-white rounded px-1`}
                                             key={type}>
 												<span className={`icon mr-2`}>
-													<Image src={`/icons/${type}.svg`} alt='type'/>
+													<Image src={`/assets/${type}.svg`} alt='type' width={50}
+                                                           height={50}/>
 												</span>
                                             <span className=''>{type}</span>
                                         </div>
-                                    )}
+                                    ))}
                                 </div>
                             </div>
                         </div>
