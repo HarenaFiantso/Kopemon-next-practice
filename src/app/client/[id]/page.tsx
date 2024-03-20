@@ -5,10 +5,11 @@ import axios from "axios";
 import {usePathname} from "next/navigation";
 import Link from "next/link";
 import {BiLeftArrowCircle} from "react-icons/bi";
+import PokemonBasicDetails from "@/component/pokemonBasicDetails";
 
 export default function PokemonDetails() {
-    const pathname = usePathname();
-    const pokemonId = pathname.split("/").pop()
+    const pathname: string = usePathname();
+    const pokemonId: string | undefined = pathname.split("/").pop()
     const [pokemonInfo, setPokemonInfo] = useState<PokemonDetail | null>(null);
 
     useEffect(() => {
@@ -34,7 +35,12 @@ export default function PokemonDetails() {
                                 <BiLeftArrowCircle size={30} className='text-orange-700'/>
                             </Link>
                         </div>
-                        <h1 className='bg-pink-500 px-5 capitalize text-gray-100 py-2 rounded-md text-4xl'> <span className='text-pink-300 font-bold'>#{pokemonId}</span> {pokemonInfo.name}</h1>
+                        <h1 className='bg-pink-500 px-5 capitalize text-gray-100 py-2 rounded-md text-4xl'><span
+                            className='text-pink-300 font-bold'>#{pokemonId}</span> {pokemonInfo.name}</h1>
+                    </div>
+                    <div className='text-gray-800 px-12 pb-20'>
+                        <PokemonBasicDetails id={pokemonId} name={pokemonInfo.name} types={pokemonInfo.types}
+                                weight={pokemonInfo.weight} height={pokemonInfo.height} />
                     </div>
                 </>
             ) : (

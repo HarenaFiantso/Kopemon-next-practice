@@ -4,6 +4,7 @@ interface Pokemon {
 }
 
 interface PokemonDetail {
+    id: string | undefined;
     name: string;
     types: { type: { name: string } }[];
     weight: number;
