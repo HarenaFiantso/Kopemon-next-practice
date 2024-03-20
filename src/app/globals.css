@@ -15,14 +15,14 @@ body {
   margin-right: 5px;
 }
 
-.selected{
+.selected {
   color: white;
   filter: saturate(200%);
   transition: all;
   transition-duration: 1000s;
 }
 
-.icon:hover{
+.icon:hover {
   filter: saturate(200%);
   transform: scale(1.1);
   cursor: pointer;
@@ -32,12 +32,11 @@ body {
   height: 60%;
   width: 60%;
   margin: 20%;
-
 }
 
 .bug {
-  background-color: #92BC2C !important;
-  box-shadow: 0 0 1px #92BC2C;
+  background-color: #92bc2c !important;
+  box-shadow: 0 0 1px #92bc2c;
 }
 
 .dark {
@@ -46,93 +45,92 @@ body {
 }
 
 .dragon {
-  background-color: #0C69C8 !important;
-  box-shadow: 0 0 20px #0C69C8;
+  background-color: #0c69c8 !important;
+  box-shadow: 0 0 20px #0c69c8;
 }
 
 .electric {
-  background-color: #F2D94E !important;
-  box-shadow: 0 0 20px #F2D94E;
+  background-color: #f2d94e !important;
+  box-shadow: 0 0 20px #f2d94e;
 }
 
 .fire {
-  background-color: #FBA54C !important;
-  box-shadow: 0 0 20px #FBA54C;
+  background-color: #fba54c !important;
+  box-shadow: 0 0 20px #fba54c;
 }
 
 .fairy {
-  background-color: #EE90E6 !important;
-  box-shadow: 0 0 20px #EE90E6;
+  background-color: #ee90e6 !important;
+  box-shadow: 0 0 20px #ee90e6;
 }
 
 .fighting {
-  background-color: #D3425F !important;
-  box-shadow: 0 0 20px #D3425F;
+  background-color: #d3425f !important;
+  box-shadow: 0 0 20px #d3425f;
 }
 
 .flying {
-  background-color: #A1BBEC !important;
-  box-shadow: 0 0 20px #A1BBEC;
+  background-color: #a1bbec !important;
+  box-shadow: 0 0 20px #a1bbec;
 }
 
 .ghost {
-  background-color: #5F6DBC !important;
-  box-shadow: 0 0 20px #5F6DBC;
+  background-color: #5f6dbc !important;
+  box-shadow: 0 0 20px #5f6dbc;
 }
 
 .grass {
-  background-color: #5FBD58 !important;
-  box-shadow: 0 0 20px #5FBD58;
+  background-color: #5fbd58 !important;
+  box-shadow: 0 0 20px #5fbd58;
 }
 
-.grass-svg{
+.grass-svg {
   /*background-image: url(./icons/grass.svg) !important;*/
 }
 
 .ground {
-  background-color: #DA7C4D !important;
-  box-shadow: 0 0 20px #DA7C4D;
+  background-color: #da7c4d !important;
+  box-shadow: 0 0 20px #da7c4d;
 }
 
 .ice {
-  background-color: #75D0C1 !important;
-  box-shadow: 0 0 20px #75D0C1;
+  background-color: #75d0c1 !important;
+  box-shadow: 0 0 20px #75d0c1;
 }
 
 .normal {
-  background-color: #A0A29F !important;
-  box-shadow: 0 0 20px #A0A29F;
+  background-color: #a0a29f !important;
+  box-shadow: 0 0 20px #a0a29f;
 }
 
 .poison {
-  background-color: #B763CF !important;
-  box-shadow: 0 0 20px #B763CF;
+  background-color: #b763cf !important;
+  box-shadow: 0 0 20px #b763cf;
 }
 
 .psychic {
-  background-color: #FA8581 !important;
-  box-shadow: 0 0 20px #FA8581;
+  background-color: #fa8581 !important;
+  box-shadow: 0 0 20px #fa8581;
 }
 
 .rock {
-  background-color: #C9BB8A !important;
-  box-shadow: 0 0 20px #C9BB8A;
+  background-color: #c9bb8a !important;
+  box-shadow: 0 0 20px #c9bb8a;
 }
 
 .steel {
-  background-color: #5695A3 !important;
-  box-shadow: 0 0 20px #5695A3;
+  background-color: #5695a3 !important;
+  box-shadow: 0 0 20px #5695a3;
 }
 
 .water {
-  background-color: #539DDF !important;
-  box-shadow: 0 0 20px #539DDF;
+  background-color: #539ddf !important;
+  box-shadow: 0 0 20px #539ddf;
 }
-
 
 /*text-color*/
 .bug-color {
-  color: #92BC2C;
+  color: #92bc2c;
 }
 
 .dark-color {
@@ -140,70 +138,70 @@ body {
 }
 
 .dragon-color {
-  color: #0C69C8;
+  color: #0c69c8;
 }
 
 .electric-color {
-  color: #F2D94E;
+  color: #f2d94e;
 }
 
 .fire-color {
-  color: #FBA54C;
+  color: #fba54c;
 }
 
 .fairy-color {
-  color: #EE90E6;
+  color: #ee90e6;
 }
 
-.fighting-color{
-  color: #D3425F;
+.fighting-color {
+  color: #d3425f;
 }
 
 .flying-color {
-  color: #A1BBEC;
+  color: #a1bbec;
 }
 
 .ghost-color {
-  color: #5F6DBC;
+  color: #5f6dbc;
 }
 
 .grass-color {
-  color: #5FBD58;
+  color: #5fbd58;
 }
 
 .ground-color {
-  color: #DA7C4D;
+  color: #da7c4d;
 }
 
 .ice-color {
-  color: #75D0C1;
+  color: #75d0c1;
 }
 
 .normal-color {
-  color: #A0A29F;
+  color: #a0a29f;
 }
 
 .poison-color {
-  color: #B763CF;
+  color: #b763cf;
 }
 
 .psychic-color {
-  color: #FA8581;
+  color: #fa8581;
 }
 
 .rock-color {
-  color: #C9BB8A;
+  color: #c9bb8a;
 }
 
 .steel-color {
-  color: #5695A3;
+  color: #5695a3;
 }
 
 .water-color {
-  color: #539DDF;
+  color: #539ddf;
 }
 
-.grid-color{
+.grid-color {
   background-color: #f7f3f3ed;
   color: #444;
 }

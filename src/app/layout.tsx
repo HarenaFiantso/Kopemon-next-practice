@@ -1,7 +1,7 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import React from "react";
+import './globals.css';
+import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import React from 'react';
 
 const poppins = localFont({
   src: [
@@ -46,8 +46,8 @@ const poppins = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Kopémon - Fiantso Harena",
-  description: "Next TypeScript practice using PokeAPI",
+  title: 'Kopémon - Fiantso Harena',
+  description: 'Next TypeScript practice using PokeAPI',
 };
 
 const RootLayout = ({
@@ -56,13 +56,13 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-      <html lang='en' className={`${poppins.variable} font-sans`}>
+    <html lang='en' className={`${poppins.variable} font-sans`}>
       <body>
-      <div className="sticky top-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 w-full h-1"/>
-      {children}
+        <div className='sticky top-0 h-1 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500' />
+        {children}
       </body>
-      </html>
+    </html>
   );
-}
+};
 
 export default RootLayout;

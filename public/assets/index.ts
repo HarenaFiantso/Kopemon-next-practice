@@ -1,3 +1,3 @@
-import Pokeball from './pokeball.png'
+import Pokeball from './pokeball.png';
 
-export { Pokeball }
+export { Pokeball };
