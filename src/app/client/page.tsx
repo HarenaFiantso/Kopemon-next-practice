@@ -42,10 +42,11 @@ const PokemonGrid: React.FC = () => {
                             <div
                                 className="w-40 bg-white p-3 m-1 rounded-lg flex flex-col items-center text-center cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
                                 <div className="w-20 h-20 md:w-24 md:h-24 flex justify-center items-center">
-                                    <img
+                                    <Image
                                         src={`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/thumbnails-compressed/${paddedPokemonId}.png`}
                                         alt="pokemon-thumbnail"
-                                        className="w-full h-full"
+                                        width={100}
+                                        height={100}
                                         loading="lazy"
                                     />
                                 </div>

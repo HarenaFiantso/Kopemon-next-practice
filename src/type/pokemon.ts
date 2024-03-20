@@ -4,7 +4,8 @@ interface Pokemon {
 }
 
 interface PokemonDetail {
-    sprites: {
-        front_default: string;
-    };
+    name: string;
+    types: { type: { name: string } }[];
+    weight: number;
+    height: number;
 }
