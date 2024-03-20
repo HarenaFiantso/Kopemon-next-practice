@@ -57,7 +57,10 @@ const RootLayout = ({
 }>) => {
   return (
       <html lang='en' className={`${poppins.variable} font-sans`}>
-      <body>{children}</body>
+      <body>
+      <div className="sticky top-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 w-full h-1"/>
+      {children}
+      </body>
       </html>
   );
 }
