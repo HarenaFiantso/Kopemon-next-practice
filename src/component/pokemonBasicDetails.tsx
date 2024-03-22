@@ -14,7 +14,7 @@ export default function PokemonBasicDetails({ id, name, weight, height, types }:
 
   return (
     <div className='mt-10 flex items-center justify-center'>
-      <div className='mt-8 flex flex-col items-center justify-between gap-20 bg-white p-5 shadow-2xl'>
+      <div className='mt-8 flex flex-col items-center justify-between gap-20 rounded-full bg-white p-5 shadow-lg'>
         <Image
           src={`https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/${paddedID}.png`}
           alt='mainImage'

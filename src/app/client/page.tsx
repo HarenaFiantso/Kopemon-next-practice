@@ -11,7 +11,7 @@ type Pokemon = {
   url: string;
 };
 
-const PokemonGrid: React.FC = () => {
+export default function PokemonGrid() {
   const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
   const [currentPage] = useState<number>(1);
 
@@ -28,10 +28,10 @@ const PokemonGrid: React.FC = () => {
             href={'/'}
             className='ml-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-center text-5xl font-semibold text-transparent'
           >
-            Kopémon
+            Kopémon client
           </Link>
         </div>
-        <p className='text-sm text-gray-500'>Welcome to Kopémon, see all Pokémon in one page</p>
+        <p className='text-sm text-gray-500'>Welcome to Kopémon client component, see all Pokémon in one page</p>
       </div>
       <div className='mt-8 flex w-full flex-wrap items-center justify-center gap-10'>
         {pokemonList.map((pokemon: Pokemon) => {
@@ -47,7 +47,6 @@ const PokemonGrid: React.FC = () => {
                     alt='pokemon-thumbnail'
                     width={100}
                     height={100}
-                    loading='lazy'
                   />
                 </div>
                 <h3 className='mt-2 w-full text-center text-xs font-semibold capitalize text-orange-700'>
@@ -60,6 +59,4 @@ const PokemonGrid: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default PokemonGrid;
+}
