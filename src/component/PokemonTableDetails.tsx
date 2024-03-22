@@ -12,7 +12,7 @@ export default function PokemonTableDetails({ id, name, weight, height, types }:
   const pokemonTypes: string[] = types.map((t) => t.type.name);
 
   return (
-    <div>
+    <div className='flex flex-col gap-5 p-20 capitalize'>
       <div className='mb-5 flex'>
         <h1 className=' mr-6 w-20 text-right text-2xl font-bold text-gray-500'>ID</h1>
         <div className=' w-2/3 font-bold'>#{id}</div>

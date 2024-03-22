@@ -1,6 +1,7 @@
 'use client';
 
 import PokemonBasicDetails from '@/component/pokemonBasicDetails';
+import { fetchPokemonInfo } from '@/lib/api';
 import axios from 'axios';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -21,17 +22,7 @@ export default function PokemonDetails() {
   const [pokemonInfo, setPokemonInfo] = useState<PokemonDetail | null>(null);
 
   useEffect(() => {
-    const fetchPokemonInfo = () => {
-      axios
-        .get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
-        .then((pokemonResponse) => {
-          setPokemonInfo(pokemonResponse.data);
-        })
-        .catch((error) => {
-          console.error('Error fetch data:', error);
-        });
-    };
-    fetchPokemonInfo();
+    fetchPokemonInfo(pokemonId).then(setPokemonInfo);
   }, [pokemonId]);
 
   return (
