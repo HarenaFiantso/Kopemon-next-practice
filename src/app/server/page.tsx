@@ -7,6 +7,11 @@ const fetchPokemonList = async () => {
   return response.json();
 };
 
+type Pokemon = {
+  name: string;
+  url: string;
+};
+
 const PokemonGrid: React.FC = async () => {
   const pokemonList = await fetchPokemonList();
   return (
@@ -18,7 +23,7 @@ const PokemonGrid: React.FC = async () => {
             key={index}
             className='flex flex-col items-center rounded-lg bg-white bg-opacity-15 p-5 text-center shadow-2xl'
           >
-            <h1 className='mb-5 font-semibold capitalize text-white'>{pokemon.name}</h1>
+            <h1 className='mb-5 font-semibold capitalize text-black'>{pokemon.name}</h1>
           </div>
         ))}
       </div>

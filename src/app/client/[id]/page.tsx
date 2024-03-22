@@ -7,6 +7,14 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { BiLeftArrowCircle } from 'react-icons/bi';
 
+type PokemonDetail = {
+  id: string | undefined;
+  name: string;
+  types: { type: { name: string } }[];
+  weight: number;
+  height: number;
+};
+
 export default function PokemonDetails() {
   const pathname: string = usePathname();
   const pokemonId: string | undefined = pathname.split('/').pop();

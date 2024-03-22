@@ -1,23 +1,19 @@
 'use client';
 
 import { Pokeball } from '../../../public/assets';
+import { fetchPokemonList } from '@/lib/api';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
-const ITEMS_PER_PAGE: number = 50;
-
-const fetchPokemonList = async (currentPage: number): Promise<Pokemon[]> => {
-  const response: Response = await fetch(
-    `https://pokeapi.co/api/v2/pokemon?limit=${ITEMS_PER_PAGE}&offset=${(currentPage - 1) * ITEMS_PER_PAGE}`
-  );
-  const data = await response.json();
-  return data.results;
+type Pokemon = {
+  name: string;
+  url: string;
 };
 
 const PokemonGrid: React.FC = () => {
   const [pokemonList, setPokemonList] = useState<Pokemon[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [currentPage] = useState<number>(1);
 
   useEffect(() => {
     fetchPokemonList(currentPage).then(setPokemonList);
